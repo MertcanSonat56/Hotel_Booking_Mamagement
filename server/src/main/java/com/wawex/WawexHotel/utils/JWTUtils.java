@@ -9,10 +9,12 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 
+@Service
 public class JWTUtils {
 
     private static final long EXPIRATION_TIME = 1000 * 60 * 24 * 7; //for 7 days
